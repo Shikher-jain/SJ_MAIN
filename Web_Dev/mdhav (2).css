@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    /* background-color: yellow; */
+    /* display: inline-block; */
+}
+
+nav {
+    display: flex;
+    
+}
+
+.nav-menu {
+    margin-left: 1000px;
+}

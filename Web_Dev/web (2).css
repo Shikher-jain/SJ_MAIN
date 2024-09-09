@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+#div1,
+span {
+    display: inline-block;
+    color: darkblue;
+    background-color: rgb(126, 243, 9);
+}
+
+.container {
+    border: 1rem solid blue;
+    /* width: 950px; */
+    width: 50%;
+    margin: auto;
+    border-radius: 19px;
+    word-wrap: break-word;
+    /* display: inline; */
+    outline: solid dashed 2px black;
+}
+
+.item {
+    align-items: center;
+    border: 1rem solid red;
+    margin: 2em auto;
+    padding: 1rem 1rem;
+    background-color: pink;
+    border-radius: 3rem;
+    width: 50%;
+    display: inline block;
+    box-shadow: turquoise 12px 15px 18px 3px;
+    /* box-shadow:turquoise 1px 1px 18px 12px inset; */
+    /* box-shadow: h-offset v-offset blur spread color inset; */
+
+}
+
+#fruit {
+    float: left;
+    width: 50%;
+}
+
+#computer {
+    float: right;
+    width: 50%;
+}
+
+#groceries {
+    /* float:right; */
+    clear: both;
+    width: 50%;
+}
+
+.anchor,
+.anchor2 {
+    text-decoration: none;
+}
+
+.anchor:hover,.anchor2:hover,.btn:hover {
+    color: yellow;
+    background-color: blue;
+}
+
+.anchor:visited,
+.btn:visited {
+    color: rgb(245, 241, 241);
+    background-color: rgb(0, 13, 13);
+}
+
+.anchor:active,
+.btn:active {
+    color: brown;
+    background-color: chartreuse;
+}
+
+.btn {
+    background-color: purple;
+    color: aqua;
+    padding: 1rem 1rem;
+    border: 2px solid rgb(155, 155, 4);
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.navbar {
+    background-color: aqua;
+    border: 4px dashed blue;
+    border-radius: 30px;
+    /* background-image: url("sjain.jpg"); */
+    /* background-position: center; */
+    font-style: italic;
+    position: sticky;
+    top:0px;
+    /* text-shadow: -3px -3px  rgb(234, 255, 0); */
+
+}
+
+h1:hover {
+    text-align: center;
+    color: red;
+    background-color: rgb(110, 227, 242);
+    font-size: 4rem;
+    background-image: url("sjain.jpg");
+    /* opacity: 0.5; */
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 1rem 1rem;
+    /* position: sticky; */
+    top: 0px;
+}
+
+.navbar li a {
+    padding: 1rem 2.4rem;
+}
+
+.search {
+    padding: 2px 2px 1px 1070px;
+}
+
+#searchs:hover {
+    color: gray;
+    background-color: darkorange;
+}
+
+.out p {
+    outline-color: blueviolet;
+    background-color: blanchedalmond;
+}
+
+.dotted {
+    outline-style: dotted;
+}
+
+.dashed {
+    outline-style: dashed;
+}
+
+.solid {
+    outline-style: solid;
+}
+
+.double {
+    outline-style: double;
+}
+
+.groove {
+    outline-style: groove;
+}
+
+.ridge {
+    outline-style: ridge;
+}
+
+.inset {
+    outline-style: inset;
+}
+
+.outset {
+    outline-style: outset;
+}
+
+.out {
+    outline-color: blueviolet;
+    background-color: blanchedalmond;
+    border: 5px solid blue;
+    text-align: left;
+}
+
+.out:hoveR {
+    background-image: none;
+}
+
+.out:hover>h2 {
+    text-align: center;
+    font-size: 225%;
+}
+
+.out>p:hover {
+    outline-color: rgb(0, 0, 0);
+    background-color: blueviolet;
+    text-align: center;
+    text-shadow: 2px blue;
+    padding: 2px 2px 2px 2px;
+    margin: 2px 2px 2px 2px;
+    font-size: 120%;
+}
+
+bdo {
+    color: blue;
+    background-color: aqua;
+}
+
+bdo:hover {
+    background-color: blue;
+    color: rgb(255, 255, 0);
+    font-size: large;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+#a1:hover {
+    /* #a1{ */
+    background-color: aquamarine;
+    text-decoration: none;
+    color: brown;
+
+    font-size: larger;
+    text-shadow: yellow 1px 2px;
+}
+
+input[type=checkbox] {
+    accent-color: red;
+}
+
+progress {
+    accent-color: rgb(223, 143, 6);
+}
+
+/* #file{
+    accent-color: black;
+} */
+.ani {
+    width: 100px;
+    height: 10px;
+    background-color: chocolate;
+}
+
+.txt {
+    text-shadow: 2px 2px 2px red;
+    padding: 22px;
+    margin: 2% auto;
+    outline: 5px dashed black;
+    border: 5px dashed black;
+    outline-offset: 3px;
+    border-radius: 20px;
+}
+
+.txt p {
+    font-size: small;
+    text-shadow: 2px 2px 2px rgb(14, 92, 9);
+}
+nav{
+    position: sticky;
+    top: 0;
+
+}
+nav ul {
+    margin: 45px auto;
+    background-image: url("sjain.jpg");
+    padding: 12px;
+    text-align: center;
+    
+}
+
+nav ul li {
+    /* list-style: lower-roman; */
+    background-color: aqua;
+    display: inline-block;
+    /* list-style-position: inside; */
+    border:2px solid blue;
+    /* width: 12px; */
+    padding: 11px;
+    margin: 11px 50px;
+    font-weight: 250;
+    /* list-style-image: url(pic.jpg); */
+    /* list-style-type:lower-greek; */
+    /* list-style: circle inside url(pic.jpg); */
+}
+nav ul li:hover {
+    /* list-style: lower-roman; */
+    background-color: blue;
+    display: inline-block;
+    border: 2px solid yellow;
+    color: yellow;
+    /* list-style-position: inside; */
+    /* border:2px solid blue; */
+    /* width: 12px; */
+    padding: 15px;
+    margin: 17px 58px;
+    /* float: none; */
+    font-weight:1000;
+}
+.pre{
+    border: 2px solid blue;
+    /* padding: 33 auto 0px 0px; */
+    /* margin: 33 auto 0px 0px; */
+    width: 30vw;
+    height: 30vh;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    /* overflow-y: scroll;
+    overflow-x: hidden; */ 
+    overflow:  hidden scroll;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+}
+.box{
+    height: 530px;
+    width: 80vw;
+    padding: 30px;
+    margin: 30px;
+    border: 2px solid blueviolet;
+}
+.box1{
+background-color: antiquewhite;
+/* position: absolute; */
+position: relative; 
+z-index: 1;
+
+}
+.box2{
+background-color: rgb(227, 147, 41);
+position: relative;
+top: -65px;
+left: 35%;
+}
+.box3{
+background-color: rgb(19, 143, 220);
+/* position: fixed; */
+top: 0px;
+left: 56vw;
+}
+.box4{
+background-color: rgb(197, 20, 103);
+position: sticky;
+top: 0px;
+}
+/* .box5{
+background-color: rgb(249, 17, 17);
+position: absolute;
+top: 0;
+} */
+.parent{
+    padding: 43px;
+    margin: 34px;
+    border: 2px solid purple;
+}

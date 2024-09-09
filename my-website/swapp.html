@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Changing Website</title>
+  <style>
+    /* CSS code here */
+    :root {
+  --primary-color: #333; /* default primary color */
+  --secondary-color: #666; /* default secondary color */
+  --background-color: #f0f0f0; /* default background color */
+}
+
+#color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--primary-color);
+}
+
+.color-swatch:hover {
+  transform: scale(1.1);
+}
+
+body {
+  background-color: var(--background-color)
+}
+  </style>
+</head>
+<body>
+  <div id="color-palette">
+    <div id="swatch-1" data-color="#FF69B4"> </div>
+    <div id="swatch-2" data-color="#34A85A"> </div>
+    <div id="swatch-3" data-color="#8B9467"> </div>
+    <!-- add more swatches as needed -->
+  </div>
+
+  <script>
+    /* JavaScript code here */
+    const colorSwatches = document.querySelectorAll('.color-swatch');
+
+colorSwatches.forEach((swatch) => {
+  swatch.addEventListener('click', (e) => {
+    const color = swatch.getAttribute('data-color');
+    updateColors(color);
+  });
+
+  swatch.addEventListener('touchstart', (e) => {
+    const color = swatch.getAttribute('data-color');
+    updateColors(color);
+  });
+});
+
+function updateColors(newColor) {
+  document.documentElement.style.setProperty('--primary-color', newColor);
+  document.documentElement.style.setProperty('--secondary-color', getContrastingColor(newColor));
+  document.documentElement.style.setProperty('--background-color', getBackgroundColor(newColor));
+}
+
+function getContrastingColor(color) {
+  // implement a function to generate a contrasting color
+  // for simplicity, let's just invert the color
+  const r = parseInt(color.substring(1, 3), 16);
+  const g = parseInt(color.substring(3, 5), 16);
+  const b = parseInt(color.substring(5, 7), 16);
+  return `#${(255 - r).toString(16)}${(255 - g).toString(16)}${(255 - b).toString(16)}`;
+}
+
+function getBackgroundColor(color) {
+  // implement a function to generate a background color
+  // for simplicity, let's just lighten the color
+  const r = parseInt(color.substring(1, 3), 16);
+  const g = parseInt(color.substring(3, 5), 16);
+  const b = parseInt(color.substring(5, 7), 16);
+  return `#${(r + 50).toString(16)}${(g + 50).toString(16)}${(b + 50).toString(16)}`;
+}
+  </script>
+</body>
+</html>

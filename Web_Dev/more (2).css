@@ -1,0 +1,126 @@
+/* .boxes :nth-child(1){ */
+    /* .boxes :nth-child(even){  */
+    .boxes :nth-child(odd){
+    /* .boxes :nth-last-child(1){ */
+        background-color: aquamarine
+    }  
+    /* .box::first-line{
+        color: red;
+    } */
+
+    /* #box3,[data-color="p"]{ */
+    /* [data-color="p"] if any confusion see div 4 in HTML */
+    /*  padding: 12px;
+        text-align: center;
+        font-size: larger;
+        background-color: rgb(152, 207, 50);
+        border: 2px solid green;
+    } */
+    .boxes::before{
+        content: "This is boxes::before";
+    }
+    .boxes::after{
+        content: "This is boxes::after";
+    }
+    .box::first-letter{
+        /* background-color:black; */
+        color:rgb(247, 9, 9);
+        font-size: 40px;
+    }
+    ::selection{
+        color: aqua;
+        background-color: black;
+    }
+input::placeholder{
+    color: red;
+     font-weight: bolder;
+     font-style: oblique;
+}
+.container{
+    border: 10px groove violet;
+    /* padding: 23px; */
+    display: flex;
+    height: 24vh;
+    align-items: center;
+    justify-content: center;
+    /* justify-content:space-around; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+    /* flex-flow:row row-reverse; */
+    /* flex-flow:row wrap; */
+    /* gap :30px;
+    row-gap: 30px;
+    column-gap: 10px; */
+    gap: 30px 10px;
+
+}
+.item{
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    margin: 6px;
+    border: 8px/*dashed*/ridge/*double*//*dotted*//*groove*/ red;
+    text-align:center;
+    /* text-align:end; */
+    font-size: 100px;
+}
+.order-1{
+    order: 1;
+    flex-grow: 2;
+}
+.order-2{
+    order: 2;
+    flex-shrink: 2;
+}
+.order-3{
+    order: 2;
+    align-self:flex-end;
+}
+.order-4{
+    order: -3;
+    align-self:flex-start;
+}
+/* div p{
+    direction: rtl;
+    unicode-bidi:bidi-override;
+} */
+
+/* t means tranforms */
+
+.t1 {
+    margin: 50px 100px;
+    height: 100vh;
+    width: 100vw;
+    border: 5px solid blueviolet;
+}
+
+.t1 .box{
+    /* margin: 5px; */
+    height: 100px;
+    width: 100px;
+    background-color: #c25959;
+    border: 5px solid blueviolet;
+    /* transform: rotate(0.60turn); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotateZ(60deg); */
+    /* transform: rotateY(60deg); */
+    /* transform:scale3d(3,3,3); */
+    /* transform: scale(3,3); */
+    /* transform: skewX(-15deg); */
+    /* transform: skewY(-15deg); */
+    /* transform: skew(-15deg); */
+    /* transform: translate(34px); */
+    /* transform: translateX(34px); */
+    /* transform: translateY(34%); */
+    /* transform:rotate(45deg); */
+    /* transform-origin: 120% 40%; */
+    /* transform: rotate(45deg) scale(2) skew(-30deg) translate(100px); */
+    transform: matrix();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--HEART ANIMATION PROTOTYE--</title>
+    <style>
+        /* Style the tab */
+.tab {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the heart element */
+.heart {
+  width: 20px;
+  height: 20px;
+  background-color: #ff69b4;
+  border-radius: 70%;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+/* Add some animation to the heart element */
+.heart.animate {
+  animation: heart-beat 1s infinite;
+}
+
+/* Define the animation keyframes */
+@keyframes heart-beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- Create a tab element -->
+    <div class="tab">
+        <!-- Create a heart element inside the tab -->
+        <div class="heart"></div>
+        <!-- Add some text to the tab -->
+        <span>Love</span>
+      </div>
+<script>
+    // Get the tab element
+const tab = document.querySelector('.tab');
+
+// Add an event listener to the tab element
+tab.addEventListener('mouseover', () => {
+  // Add the animate class to the heart element
+  tab.querySelector('.heart').classList.add('animate');
+});
+
+// Add an event listener to the tab element
+tab.addEventListener('mouseout', () => {
+  // Remove the animate class from the heart element
+  tab.querySelector('.heart').classList.remove('animate');
+});
+</script>
+</body>
+</html>

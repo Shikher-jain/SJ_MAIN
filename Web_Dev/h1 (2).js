@@ -1,0 +1,2 @@
+alert("hello") ;
+addEventListener ("abort");

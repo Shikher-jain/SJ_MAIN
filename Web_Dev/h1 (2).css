@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+#para1 {
+    color: red;
+    background-color: blue;
+    /* height: 113px; */
+    /* width: 133px;   */
+    border: 8px solid red;
+    /* border-width: 5px;
+    border-style: solid;
+    border-radius: 18px; */
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    width: 350px;
+    border-radius: 40px;
+}
+
+#para2 {
+    color: rgb(95, 75, 185);
+    border: 8px solid gold;
+}
+
+#para3 {
+    color: #000;
+    background-color: rgb(26, 230, 230);
+    border-top: 4px solid red;
+    border-right: 4px solid rgb(9, 242, 48);
+    border-left: 4px solid rgb(12, 63, 248);
+    border-bottom: 4px solid rgb(240, 252, 10);
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 29px;
+}
+
+#para4 {
+    height: 150px;
+    width: 970px;
+    background-image: url('https://yt3.ggpht.com/fTqRlZFwE8if6EH69yVIRs34-fbPxJM2Oo-W5zS1PTV0jLGscR-kXDLBBmMKoyuvOOFF783d=s108-c-k-c0x00ffffff-no-rj');
+    border: 4px solid tomato;
+    /* background-repeat: x,y; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 3px 55px 10px 4px;
+    /* padding:top right bottom left ;*/
+    margin: 20px 20px 20px 20px;
+    width: 350px;
+    border-radius: 40px;
+    
+}
+.container {
+    background-color: rgb(238, 186, 14);
+    border: 8px solid rgba(230, 11, 11, 0.671);
+    padding: 25px 25px 25px 25px;
+    /* padding: 44px 55px; */
+    margin: 20px 20px 20px 20px;
+    width: 350px;
+    border-radius: 50px;
+    clear: both;
+    /* box-sizing: border-box; */
+}
+
+
+.gross {
+    border: 12px solid #000;
+    margin: auto;
+    background-color: aqua;
+    /* color: blue; */
+    
+}
+#fruits{
+    float:right;
+}
+#comp{
+    float:left;
+}
+#vegetables{
+    float:right;
+}
+#bags{
+    float:righ
+}
+.item {
+    color: rgb(255, 255, 255);
+    border: 7px solid #000;
+    margin: 12px 22px;
+    padding: 12px 22px;
+    background-color: rgb(243, 94, 7);
+    width: 45%;
+    /* float: left; */
+    clear: both;
+}
+h1,p {
+    text-align: left;
+    text-align: justify;
+}
+.contain{
+    border: 5px solid blue;
+    border-radius: 50px;
+    background-color: rgb(9, 121, 121);
+    padding: 30px 20px;
+    /* margin: 30px auto; */
+    width: 350px;
+    clear: both;
+}
+a{
+    text-decoration:/*line-through*/ overline underline /* wavy red*/;
+    /* text-emphasis: triangle red; */
+    /* text-orientation: upright; */
+    /* text-overflow: ellipsis; */
+    text-shadow: 2px 2px 10px blueviolet;
+    text-transform: capitalize;
+    background-color: rgb(126, 8, 252);
+    /* transform: matrix(0.866,0.7,-0.8,0.866,0,0); */
+}
+a:hover{
+    color:red;
+    background-color: aqua;
+}
+a:visited{
+    background-color: rgba(249, 248, 239, 0.929);
+}
+a:active{
+    background-color: blue;
+}
+.b1{
+    background-color: crimson;
+    padding: 66px auto;
+    margin: 50px 50px;
+    border: 5px solid rgb(7, 52, 250); 
+    cursor: pointer;
+    transform: matrix(0.7,0.9,-0.9,0.5,2,8);
+    transform: scale3d(1,2,9);
+    transform: translate(20px,10px);
+    transform: skew(345deg,30deg);
+    transform: rotate(180deg);
+    
+}
+.link1{
+    background-color: aquamarine;
+    }
+.b1:hover{
+        background-color: rgb(24, 238, 167);
+        font-style: italic;
+        font-weight: 1000;
+        }
+    #username{
+        border: 2px solid aqua;
+        border-radius: 30px;
+        padding: 3px 3px;
+        margin: 3px 3px;
+    }
+    #userpin{
+        border: 2px solid aqua;
+        border-radius: 30px;
+        padding: 3px 3px;
+        margin: 3px 3px;
+    }
+    #useradd{
+        border: 2px solid aqua;
+        border-radius: 30px;
+        padding: 3px 3px;
+        margin: 3px 3px;
+    }
+    #usercity{
+        border: 2px solid aqua;
+        border-radius: 30px;
+        padding: 3px 3px;
+        margin: 3px 3px;
+    }
+    iframe{
+        color: aqua;
+        background-color: blue;
+        margin: 15px 50px;
+    }
