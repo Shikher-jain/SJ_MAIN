@@ -1,4 +1,4 @@
-package SJ_MAIN.scalarDSA;
+// package SJ_MAIN.scalarDSA;
 
 class BinomialCoefficient01 {
 
