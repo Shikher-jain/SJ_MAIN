@@ -15,7 +15,7 @@ def send_notification():
     notification.notify(
         title="Reminder To Take A Break",
         message="Have a sip of water",
-        timeout=3
+        timeout=15
     )
 
 if __name__ == "__main__":
