@@ -1,6 +1,6 @@
 // package SJ_MAIN.scalarDSA;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class MathDemo{
     
@@ -8,10 +8,12 @@ public class MathDemo{
         return  (double) (Math.PI * r * r) ;
     }
 
-    public static double RandomNO() {
-        for(int i = 0;1<=5;i++){
-            System.out.println( Math.random());
+    public static void RandomNO() {
+        for(int i = 0;i<=10;i++){
+            // System.out.println( (int)(Math.random()*10));
+            System.out.println( (int)(Math.random()*10)+12);
         }
+        
     }
     public static void main(String[] args) {
 
