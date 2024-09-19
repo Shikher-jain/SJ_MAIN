@@ -14,18 +14,15 @@ a=[7,3,8,5,3,9]  --> 7 3 8 5 3 9   --> 3
 def solve(a):
     # ans=1
     ans=1
-    n=len(a)
-    m=len(a)
     high=a[0]
-    if n==1:
-        return ans
+    m=len(a)
     i=1
-    while i<m:
+    while i < m :
         if a[i] > high:    
             ans+=1
             high=a[i]
+        i+=1
     return ans
-
 
 # arr=list(map(int,input("LIST").split()))
 arr=[7,3,8,5,3,9]        
