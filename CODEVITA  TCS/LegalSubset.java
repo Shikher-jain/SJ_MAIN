@@ -54,6 +54,7 @@ public class LegalSubset {
     }
 
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
         long R = scanner.nextLong();
