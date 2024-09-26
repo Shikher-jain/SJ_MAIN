@@ -13,4 +13,4 @@ def duplicate(n ,arr):
     return arr
 
 arr = [2,3,1,1,2,3]
-print(duplicate(len(arr),arr))
+print(duplicate(len(arr),arr))  
