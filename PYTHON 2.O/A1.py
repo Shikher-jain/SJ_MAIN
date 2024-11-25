@@ -5,7 +5,6 @@ def Fx(n):
 
 print("Second :- 1.py")
 
-
 if __name__ == "__main__":
     n=input("Enter name :")
     Fx(n)
