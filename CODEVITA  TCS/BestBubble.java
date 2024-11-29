@@ -54,11 +54,11 @@ public class BestBubble {
     }
   
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
-        String GoodStr = scanner.nextLine();
-        int Distance = totalDist(name, GoodStr);
-        System.out.println(Distance);
+        try (Scanner scanner = new Scanner(System.in)) {
+            String name = scanner.nextLine();
+            String GoodStr = scanner.nextLine();
+            int Distance = totalDist(name, GoodStr);
+            System.out.println(Distance);
+        }
     }
 }
-
