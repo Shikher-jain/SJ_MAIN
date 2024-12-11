@@ -2,11 +2,16 @@ from tkinter import*
 import math,random,os
 from tkinter import messagebox 
 class bill_app: 
+
     def __init__(self,root):
+        def rgb_to_hex(r, g, b):
+            return f"#{r:02x}{g:02x}{b:02x}"
+
         self.root=root
         self.root.geometry("1350x700+0+0") 
         self.root.title("Billing software")
-        bg_color="blue"
+        bg_color= rgb_to_hex(173, 216, 230) 
+        # bg_color="blue"
         title=Label(self.root,text="Billing Software",bd=12,relief=GROOVE,bg=bg_color,fg="white",font=("times new roman",30,"bold"),pady=2).pack(fill=X)
         #===========variables=======
 
@@ -461,7 +466,6 @@ class bill_app:
         op=messagebox.askyesno("Exit","Do you want to exit?")
         if op>0:
             self.root.destroy()
-            
 root=Tk()
 obj = bill_app(root)
 root.mainloop()
