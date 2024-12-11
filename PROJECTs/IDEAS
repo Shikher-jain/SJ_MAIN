@@ -9,12 +9,18 @@ Weather App: Build a web app that displays current weather and forecast for a gi
 Data Science and Machine Learning:
 
 Image Classification: Train a machine learning model to classify images into different categories (e.g., animals, vehicles, buildings).
+
 Chatbot: Create a chatbot that uses natural language processing (NLP) to respond to user queries.
+
 Sentiment Analysis: Build a program that analyzes text data to determine the sentiment (positive, negative, neutral) of customer reviews or social media posts.
+
 Recommendation System: Develop a recommendation system that suggests products or movies based on user preferences.
+
+
 Games and Entertainment:
 
 Tic-Tac-Toe: Create a command-line or GUI-based Tic-Tac-Toe game.
+
 Hangman: Build a game of Hangman that allows users to guess a word or phrase.
 Snake Game: Create a GUI-based Snake game using Pygame or Pyglet.
 Quiz Game: Develop a quiz game that asks users questions and keeps track of scores.
